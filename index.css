@@ -4,11 +4,48 @@
 }
 body{
     height: 100%;
+    width: 100%;
     overflow-y: hidden;
+}
+header{
+    display: none;    
 }
 article{
     writing-mode: vertical-rl;
     margin: 1em 0;
+    height: calc(100vh - 2em);
+    padding-right: 5em;
+    position: absolute;
+}
+h1{
+    position: absolute;
+    right: max(-250px, -50vw);
+    top: 50%;
+    transform: translate(50%, -50%);
+    writing-mode: horizontal-tb;
+    color: white;
+    font-size: 5em;
+    font-family: serif;
+    filter: url(#nizimi);
+}
+.cap{
+    writing-mode: horizontal-tb;
+    color: white;
+    filter: url(#nizimi);
+    position: absolute;
+    right: max(-290px, -60vw);
+    top: 60vh;
+    font-size: 1.2em;
+    transform: translate(50%, -50%);
+}
+.cap a{
+    text-decoration: none;
+}
+.cap a:hover{
+    text-decoration: underline dashed white;
+}
+.cap a:visited{
+    color: white;
 }
 article p{
     font-family: 'Zen Old Mincho', serif;
@@ -18,4 +55,24 @@ article p{
 article h4{
     letter-spacing: .2em;
     margin: 3em;
+}
+article::before{
+    content: '';
+    position: absolute;
+    top: 0; 
+    right: max(-500px,-100vw);
+    height: 100vh;
+    width: min(500px,100vw);
+    z-index: 0;
+    filter: url(#redpaper);
+}
+article::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    filter: url(#paper);
 }
