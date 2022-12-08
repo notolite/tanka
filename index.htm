@@ -3,13 +3,13 @@
 <head>
     <link rel='stylesheet' href='index.css'>
     <link href='https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap' rel='stylesheet'>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
     <title>短歌 | notolyte</title>
 </head>
 <body>
     <article>
         <h1>短歌</h1>
-        <p class='cap'>詠み人 <a href='https://twitter.com/notolytos'>notolyte</a></p>
+        <p id='cap1'>詠み人 <a href='https://twitter.com/notolytos'>notolyte</a></p>
         <h4>十二月七日</h4>
         <p>見むとてもかなはぬ君にあかねさす月のさやけきかげだにもがな</p>
         <h4>十二月四日</h4>
@@ -127,14 +127,7 @@
     </article>
     <script>
         window.onload = function(){
-            const elm = document.documentElement;
-            rightEdge = elm.scrollWidth - elm.clientWidth;
-            window.scroll(rightEdge, 0);
-            if(elm.clientWidth < 500){
-                setTimeout(function(){
-                    window.scrollBy({top:0,left:-elm.clientWidth,behavior:'smooth'});
-                },3000);
-            }
+            window.scroll(document.documentElement.scrollWidth, 0);
         }
     </script>
     <svg viewBox='0 0 0 0' width='0px' height='0px'>
