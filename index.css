@@ -29,6 +29,7 @@ h1{
     font-size: 5em;
     font-family: serif;
     filter: url(#nizimi);
+    right: max(-250px, -50vw);
 }
 #cap1{
     writing-mode: horizontal-tb;
@@ -38,12 +39,11 @@ h1{
     top: 60vh;
     font-size: 1.2em;
     transform: translate(50%, -50%);
+    right: max(-290px, -60vw);
 }
 #cap1 a{
     text-decoration: none;
-}
-#cap1 a:hover{
-    text-decoration: underline dashed white;
+    color: white;
 }
 #cap1 a:visited{
     color: white;
@@ -67,12 +67,6 @@ article::before{
     height: 100%;
     z-index: 0;
 }
-h1{
-    right: max(-250px, -50vw);
-}
-#cap1{
-    right: max(-290px, -60vw);
-}
 @media screen and (min-width: 768px) {
     article::after{
         content: '';
@@ -83,5 +77,8 @@ h1{
         width: 100%;
         z-index: -1;
         filter: url(#paper);
+    }
+    #cap1 a:hover{
+        text-decoration: underline dashed white;
     }
 }
