@@ -129,7 +129,12 @@
     </article>
     <script>
         window.onload = function(){
-            window.scroll(document.documentElement.scrollWidth, 0);
+            const pgwid = document.documentElement.scrollWidth;
+            window.scroll(pgwid, 0);
+            const vw = document.documentElement.clientWidth;
+            if(vw < 769){
+                setTimeout(()=>{window.scrollBy({left:-vw,top:0,behavior:'smooth'});},1700);
+            }
         }
     </script>
     <svg viewBox='0 0 0 0' width='0px' height='0px'>
