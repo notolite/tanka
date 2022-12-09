@@ -73,13 +73,15 @@ h1{
 #cap1{
     right: max(-290px, -60vw);
 }
-article::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    filter: url(#paper);
+@media screen and (min-width: 768px) {
+    article::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        filter: url(#paper);
+    }
 }
