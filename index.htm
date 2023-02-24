@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel='stylesheet' href='index.css'>
     <link href='https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap' rel='stylesheet'>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="icon alternate" type="image/png" href="./favicon.png">
     <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1">
     <title>短歌 | notolyte</title>
 </head>
+
 <body>
     <article>
         <h1>短歌</h1>
         <p id='cap1'>詠み人 <a href='https://twitter.com/notolytos'>notolyte</a></p>
+        <h4>二月二十四日</h4>
+        <p>運ばれし珈琲は早冷めゆきてなほ暖かき人ぞありける</p>
         <h4>二月七日</h4>
         <p>創造は歪みなりけり破壊なり目を背くれば自ら歪む</p>
         <p>大川を離るる流れも天地の理なればいかで苦しき</p>
@@ -289,12 +295,12 @@
         <p>すぐ横にいる今だけはすぐ横にいるという関係のぼくたち</p>
     </article>
     <script>
-        window.onload = function(){
+        window.onload = function () {
             const pgwid = document.documentElement.scrollWidth;
             window.scroll(pgwid, 0);
             const vw = document.documentElement.clientWidth;
-            if(vw < 769){
-                setTimeout(()=>{window.scrollBy({left:-vw,top:0,behavior:'smooth'});},1700);
+            if (vw < 769) {
+                setTimeout(() => { window.scrollBy({ left: -vw, top: 0, behavior: 'smooth' }); }, 1700);
             }
         }
     </script>
@@ -317,4 +323,5 @@
         </filter>
     </svg>
 </body>
+
 </html>
