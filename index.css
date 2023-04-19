@@ -53,10 +53,10 @@ article h4 {
 article::before {
     right: max(-500px, -100vw);
     width: min(500px, 100vw);
-    background: url(./backgroundRed.png);
+    background: url(./backgroundRed.png) repeat-y;
     content: '';
     position: absolute;
-    top: 0;
-    height: 100%;
+    top: -2em;
+    height: calc(100% + 4em);
     z-index: 0;
 }
