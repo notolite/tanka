@@ -1,84 +1,62 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     height: 100%;
     font-size: 2.6vh;
 }
-body{
+
+body {
     height: 100%;
     width: 100%;
+    background-image: url(./background.png);
+    font-family: 'Zen Old Mincho', serif;
+    font-weight: 500;
 }
-header{
-    display: none;    
+
+header {
+    display: none;
 }
-article{
+
+article {
     writing-mode: vertical-rl;
     margin: 2em 0;
     height: calc(100% - 4em);
     padding-right: 5em;
     position: absolute;
 }
-h1{
+
+h1 {
     position: absolute;
     top: 50%;
     transform: translate(50%, -50%);
     writing-mode: horizontal-tb;
     color: white;
     font-size: 5em;
-    font-family: serif;
     filter: url(#nizimi);
     right: max(-250px, -50vw);
 }
-#cap1{
-    writing-mode: horizontal-tb;
-    color: white;
-    filter: url(#nizimi);
-    position: absolute;
-    top: 60vh;
-    font-size: 1.2em;
-    transform: translate(50%, -50%);
-    right: max(-290px, -60vw);
-}
-#cap1 a{
-    text-decoration: none;
-    color: white;
-}
-#cap1 a:visited{
-    color: white;
-}
-article p{
-    font-family: 'Zen Old Mincho', serif;
+
+article p {
     margin-left: 2em;
     margin-right: 2em;
 }
-article h4{
+
+article h4 {
     letter-spacing: .2em;
     margin: 3em;
+    font-family: sans-serif;
 }
-article::before{
-    right: max(-500px,-100vw);
-    width: min(500px,100vw);
-    filter: url(#redpaper);
+
+article::before {
+    right: max(-500px, -100vw);
+    width: min(500px, 100vw);
+    background: url(./backgroundRed.png);
     content: '';
     position: absolute;
-    top: 0; 
+    top: 0;
     height: 100%;
     z-index: 0;
-}
-@media screen and (min-width: 768px) {
-    article::after{
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
-        filter: url(#paper);
-    }
-    #cap1 a:hover{
-        text-decoration: underline dashed white;
-    }
 }
