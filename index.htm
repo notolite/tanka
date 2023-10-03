@@ -21,6 +21,9 @@
 <body>
     <article>
         <h1>短歌</h1>
+        <h4>十月二日</h4>
+        <p>わたしとは身体の外側全体で宇宙は内側全体だろう</p>
+        <p>踏切をもつ道沿いの顔をした廃線跡の沿線民家</p>
         <h4>十月一日　あき風</h4>
         <p>もし君の世界にぼくがゐなければやっぱり悲しい運命でした</p>
         <p>火の玉をもっとも永く輝かすために線香花火横たふ</p>
@@ -28,7 +31,7 @@
         <p>蝋燭が消えて形を失った　蛍火明き道返り見る</p>
         <p>初めからみんな決まってゐたのならそれは綺麗な悲劇でせうか</p>
         <p>金の<ruby>氷<rt>ひ</rt></ruby>に色とりどりの<ruby>氷<rt>ひ</rt></ruby>の溶けて跳ぬる涙も黒潦</p>
-        <p>眼球に大き海原映り来て惜しや我が身の地球ならざる</p>
+        <p>眼球に<ruby>大<rt>ひろ</rt></ruby>き海原映り来て惜しや我が身の地球ならざる</p>
         <p>半身に初めて知りしぬくもりを忘れやらでぞつむじ風吹く</p>
         <p>あらぬ人を見る夢のまだ覚めやらで秋の夜長や情けあるべき</p>
         <p>木枯らしが山を頂きから変へてどこにもゐない人を愛する</p>
@@ -417,9 +420,7 @@
             const pgwid = document.documentElement.scrollWidth;
             window.scroll(pgwid, 0);
             const vw = document.documentElement.clientWidth;
-            if (vw < 769) {
-                setTimeout(() => { window.scrollBy({ left: -vw, top: 0, behavior: 'smooth' }); }, 1700);
-            }
+            window.scrollBy({ left: -vw, top: 0, behavior: 'instant' });
         }
     </script>
     <svg viewBox='0 0 0 0' width='0px' height='0px'>
