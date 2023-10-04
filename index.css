@@ -11,7 +11,6 @@ html {
 body {
     height: 100%;
     width: 100%;
-    background-image: url(./background.png);
     font-family: 'Shippori Mincho', serif;
     font-weight: 500;
 }
@@ -22,6 +21,7 @@ header {
 
 article {
     writing-mode: vertical-rl;
+    text-orientation: upright;
     margin: 2em 0;
     height: calc(100% - 4em);
     padding-right: 5em;
@@ -53,7 +53,7 @@ article h4 {
 article::before {
     right: max(-500px, -100vw);
     width: min(500px, 100vw);
-    background: url(./backgroundRed.png) repeat-y;
+    background: #8DAEB0;
     content: '';
     position: absolute;
     top: -2em;
