@@ -9,8 +9,9 @@ html {
 }
 
 body {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
     font-family: 'Shippori Mincho', serif;
     font-weight: 500;
 }
@@ -20,43 +21,42 @@ header {
 }
 
 article {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    margin: 2em 0;
-    height: calc(100% - 4em);
+    margin: 0;
+    height: 100%;
     padding-right: 5em;
     position: absolute;
 }
 
 h1 {
-    position: absolute;
-    top: 50%;
-    transform: translate(50%, -50%);
+    display: block;
     writing-mode: horizontal-tb;
+    text-align: center;
+    line-height: 100vh;
+    padding: auto;
+    height: 100%;
+    background: #8DAEB0;
     color: white;
     font-size: 5em;
     filter: url(#nizimi);
-    right: max(-250px, -50vw);
+    width: max(500px, 20vw);
 }
 
 article p {
+    margin-top: 3em;
     margin-left: 2em;
     margin-right: 2em;
 }
 
 article h4 {
     letter-spacing: .2em;
-    margin: 3em;
+    margin-left: 3em;
+    margin-right: 3em;
+    margin-top: 5em;
     font-family: sans-serif;
-}
-
-article::before {
-    right: max(-500px, -100vw);
-    width: min(500px, 100vw);
-    background: #8DAEB0;
-    content: '';
-    position: absolute;
-    top: -2em;
-    height: calc(100% + 4em);
-    z-index: 0;
 }
