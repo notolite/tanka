@@ -55,7 +55,14 @@ article p {
 article h4 {
     margin-left: 3em;
     margin-right: 6em;
-    margin-top: 4em;
+    margin-top: 4rem;
     font-family: sans-serif;
     font-weight: normal;
+}
+
+.caption {
+    margin-top: 4rem;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: smaller;
 }
