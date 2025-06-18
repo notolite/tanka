@@ -6,6 +6,7 @@
 html {
     height: 100%;
     font-size: 2.6vh;
+    overflow-y: hidden;
 }
 
 body {
@@ -34,16 +35,15 @@ article {
 
 h1 {
     display: block;
-    writing-mode: horizontal-tb;
+    writing-mode: vertical-rl;
     text-align: center;
-    line-height: 100vh;
+    line-height: 45vh;
     padding: auto;
     height: 100%;
     background: #8DAEB0;
     color: white;
     font-size: 5em;
     filter: url(#nizimi);
-    width: max(500px, 20vw);
 }
 
 article p {
